@@ -21,7 +21,12 @@ title: <my-element> ⌲ Home
   </div>
   <div>
 
-<my-element></my-element>
+<my-element>
+      <div class="swiper-slide">Eka</div>
+      <div class="swiper-slide">Toka</div>
+      <div class="swiper-slide">Kolmas</div>
+      <div class="swiper-slide">Neljäs</div>
+</my-element>
 
   </div>
 </section>

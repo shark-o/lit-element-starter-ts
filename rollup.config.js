@@ -8,11 +8,12 @@ import summary from 'rollup-plugin-summary';
 import {terser} from 'rollup-plugin-terser';
 import resolve from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
+import css from 'rollup-plugin-import-css';
 
 export default {
   input: 'my-element.js',
   output: {
-    file: 'my-element.bundled.js',
+    file: 'docs/my-element.bundled.js',
     format: 'esm',
   },
   onwarn(warning) {
@@ -27,6 +28,7 @@ export default {
      * This minification setup serves the static site generation.
      * For bundling and minification, check the README.md file.
      */
+    css(),
     terser({
       ecma: 2021,
       module: true,
